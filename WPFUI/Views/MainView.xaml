@@ -87,20 +87,13 @@
             </Grid.RowDefinitions>
             <Viewbox VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
                 <StackPanel Orientation="Horizontal" >
-                    <TextBlock x:Name="OctetOne" Text="1" />
-                    <TextBlock x:Name="OctetTwo" Text="2"/>
-                    <TextBlock x:Name="OctetThree" Text="3"/>
-                    <TextBlock x:Name="OctetFour" Text="4"/>
+                    <TextBlock x:Name="OctetOne"/>
+                    <TextBlock x:Name="OctetTwo"/>
+                    <TextBlock x:Name="OctetThree"/>
+                    <TextBlock x:Name="OctetFour"/>
                 </StackPanel>
             </Viewbox>
-            <Grid Grid.Row="1" Margin="40 0" HorizontalAlignment="Center">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="4*"/>
-                    <ColumnDefinition Width="1*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Name="Example" VerticalAlignment="Center" HorizontalAlignment="right" Text="this is a test" Margin="0 0 20 0" />
-                <Button x:Name="ExampleCopy" Content="Copy" Grid.Column="1" Margin="0 2"/>
-            </Grid>
+            <TextBlock Name="Example" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Grid>
     </Grid>
 </UserControl>
